@@ -11,15 +11,22 @@ import {
 } from 'react';
 
 function App() {
-  let [counter,setcounter]=useState(0)
+  let [counter, setcounter] = useState(0)
 
-  function addValue(){
-    console.log(counter)
-    setcounter(counter+1)
-    console.log(counter)
+  // adding value
+  function addValue() {
+    setcounter(counter + 1)
+
 
   }
-  
+
+  // removing value
+  function removeCounter() {
+if (counter > 0) {
+  setcounter(counter - 1);
+}
+  }
+
 
   // this only prints it's value to console it doesn't update in ui--------------------
   // let counter = 0;
@@ -37,8 +44,10 @@ function App() {
       <div style={{ textAlign: "center" }}>
         <button
           onClick={addValue}
-        >add value : {counter} </button>
-        <button>remove value : {counter} </button>
+        >add value </button>
+        <button
+          onClick={removeCounter}
+        >remove value</button>
       </div>
 
     </>
