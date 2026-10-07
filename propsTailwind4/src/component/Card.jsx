@@ -1,6 +1,6 @@
 
 
-function Card({ myText, newObj }) {
+function Card({ myText}) {
     return (
         <div className="mx-auto mt-10 w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Modern house" className="h-64 w-full object-cover" />
